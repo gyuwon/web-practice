@@ -149,3 +149,5 @@ $RECYCLE.BIN/
 
 # Mac crap
 .DS_Store
+/AspNetStack/.NET 4.5/AspNetStack/App_Data
+/AspNetStack/.NET 4.5/packages
