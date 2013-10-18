@@ -40,5 +40,6 @@ namespace AspNetStack.Models
         public DbSet<UserLogin> UserLogins { get; set; }
         public DbSet<Role> Roles { get; set; }
         public DbSet<UserRole> UserRoles { get; set; }
+        public DbSet<Contact> Contacts { get; set; }
     }
 }
