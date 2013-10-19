@@ -1,6 +1,8 @@
 ﻿var should = require('should');
 var sinon = require('sinon');
 var knockout = require('../knockout-2.3.0');
+var MainViewModel = require('./Contacts').MainViewModel;
+var NewContactViewModel = require('./Contacts').NewContactViewModel;
 
 describe('MainViewModel', function () {
     it('test should call getContacts and update contacts', function () {
