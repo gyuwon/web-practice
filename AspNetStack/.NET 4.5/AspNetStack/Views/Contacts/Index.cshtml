@@ -54,3 +54,20 @@
         </div>
     </div>
 </div>
+
+@section scripts {
+    <script type="text/javascript">
+        var service = {
+            getContacts: function (callback) {
+                $.getJSON('/api/Contacts/', function (data) {
+                    callback(data);
+                });
+            },
+            addContact: function (firstName, lastName, email, callback) {
+                $.post('/api/Contacts/', { FirstName: firstName, LastName: lastName, Email: email }, function () {
+                    callback();
+                });
+            }
+        };
+    </script>
+}
