@@ -6,10 +6,10 @@ using System.Web.Mvc;
 
 namespace AspNetStack.Controllers
 {
-    public class ContactsController : Controller
+    public class AngularController : Controller
     {
         //
-        // GET: /Contacts/
+        // GET: /Angular/
         public ActionResult Index()
         {
             return View();
