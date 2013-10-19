@@ -4,28 +4,28 @@
 
 <div class="container-fluid">
     <div class="row-fluid">
-        <div class="span5">
+        <div data-bind="with: newContact" class="span5">
             <div class="control-group">
                 <label class="control-label" for="inputFirstName">First Name</label>
                 <div class="controls">
-                    <input type="text" id="inputFirstName" placeholder="First Name">
+                    <input data-bind="value: firstName" type="text" id="inputFirstName" placeholder="First Name">
                 </div>
             </div>
             <div class="control-group">
                 <label class="control-label" for="inputLastName">Last Name</label>
                 <div class="controls">
-                    <input type="text" id="inputLastName" placeholder="Last Name">
+                    <input data-bind="value: lastName" type="text" id="inputLastName" placeholder="Last Name">
                 </div>
             </div>
             <div class="control-group">
                 <label class="control-label" for="inputEmail">Email</label>
                 <div class="controls">
-                    <input type="text" id="inputEmail" placeholder="Email">
+                    <input data-bind="value: email" type="text" id="inputEmail" placeholder="Email">
                 </div>
             </div>
             <div class="control-group">
                 <div class="controls">
-                    <button class="btn">Add</button>
+                    <button data-bind="click: add" class="btn">Add</button>
                 </div>
             </div>
         </div>
@@ -38,16 +38,11 @@
                         <th>Email</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody data-bind="foreach: contacts">
                     <tr>
-                        <td>Tony</td>
-                        <td>Stark</td>
-                        <td>ironman@avengers.com</td>
-                    </tr>
-                    <tr>
-                        <td>Bruce</td>
-                        <td>Banner</td>
-                        <td>hulk@avengers.com</td>
+                        <td data-bind="text: FirstName"></td>
+                        <td data-bind="text: LastName"></td>
+                        <td data-bind="text: Email"></td>
                     </tr>
                 </tbody>
             </table>
@@ -56,6 +51,8 @@
 </div>
 
 @section scripts {
+    @Scripts.Render("~/Scripts/knockout-2.3.0.js")
+    @Scripts.Render("~/Scripts/ViewModels/Contacts.js")
     <script type="text/javascript">
         var service = {
             getContacts: function (callback) {
@@ -69,5 +66,8 @@
                 });
             }
         };
+        var viewModel = new Contacts.MainViewModel(ko, service);
+        viewModel.updateContacts();
+        ko.applyBindings(viewModel);
     </script>
 }
