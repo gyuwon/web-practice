@@ -564,7 +564,8 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Contacts\Index.cshtml" />
     <Content Include="Scripts\version.json" />
-    <Content Include="Views\Angular\Index.cshtml" />
+    <Content Include="Views\Angular\Step00.cshtml" />
+    <Content Include="Views\Angular\Step01.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
