@@ -548,8 +548,10 @@
     <Content Include="Scripts\knockout-2.3.0.debug.js" />
     <Content Include="Scripts\knockout-2.3.0.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\sinon-1.7.3.js" />
     <Content Include="Scripts\version.txt" />
     <Content Include="Scripts\ViewModels\Contacts.js" />
+    <Content Include="Scripts\ViewModels\Contacts.spec.js" />
     <Content Include="Scripts\ViewModels\test.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Web.config" />
