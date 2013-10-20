@@ -151,7 +151,3 @@ $RECYCLE.BIN/
 .DS_Store
 /AspNetStack/.NET 4.5/AspNetStack/App_Data
 /AspNetStack/.NET 4.5/packages
-/AspNetStack/.NET 4.5/AspNetStack/Content/jasmine
-/AspNetStack/.NET 4.5/AspNetStack/Scripts/jasmine-samples
-/AspNetStack/.NET 4.5/AspNetStack/Scripts/jasmine
-/AspNetStack/.NET 4.5/AspNetStack/Controllers/JasmineController.cs
