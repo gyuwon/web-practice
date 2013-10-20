@@ -1,0 +1,25 @@
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div data-bind="with: newContact" class="span3">
+            <ul>
+                @foreach (string step in ViewBag.Steps)
+                {
+                    <li>@Html.ActionLink(step, step)</li>
+                }
+            </ul>
+        </div>
+        <div class="span7">
+            @RenderBody()
+        </div>
+    </div>
+</div>
+
+
+@section scripts {
+    @Scripts.Render("~/Scripts/angular.js")
+    @RenderSection("scripts", required: false)
+}

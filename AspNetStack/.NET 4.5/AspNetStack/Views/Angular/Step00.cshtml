@@ -1,10 +1,13 @@
 @{
-    ViewBag.Title = "Index";
+    Layout = "~/Views/Angular/_Layout.cshtml";
+    ViewBag.Title = "Step00";
 }
 
 <p>Nothing here {{'yet' + '!'}}</p>
 <p>1 + 2 = {{1 + 2}}</p>
 
 @section scripts {
-    @Scripts.Render("~/Scripts/angular.js")
+    <script type="text/javascript">
+        $('html').attr('ng-app', '');
+    </script>
 }

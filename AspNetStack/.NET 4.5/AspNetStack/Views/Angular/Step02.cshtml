@@ -1,0 +1,20 @@
+@{
+    Layout = "~/Views/Angular/_Layout.cshtml";
+    ViewBag.Title = "Step02";
+}
+
+<div ng-controller="PhoneListCtrl">
+    <ul>
+        <li ng-repeat="phone in phones">
+            {{phone.name}}
+            <p>{{phone.snippet}}</p>
+        </li>
+    </ul>
+</div>
+
+@section scripts {
+    @Scripts.Render("~/Scripts/Angular/Step02.js")
+    <script type="text/javascript">
+        $('html').attr('ng-app', 'phonecatApp');
+    </script>
+}

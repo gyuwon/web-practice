@@ -265,6 +265,7 @@
     <Content Include="Scripts\angular-touch.min.js" />
     <Content Include="Scripts\angular.js" />
     <Content Include="Scripts\angular.min.js" />
+    <Content Include="Scripts\Angular\Step02.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\errors.json" />
@@ -566,6 +567,8 @@
     <Content Include="Scripts\version.json" />
     <Content Include="Views\Angular\Step00.cshtml" />
     <Content Include="Views\Angular\Step01.cshtml" />
+    <Content Include="Views\Angular\Step02.cshtml" />
+    <Content Include="Views\Angular\_Layout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
