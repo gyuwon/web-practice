@@ -582,7 +582,7 @@
     <Content Include="Views\Angular\Step01.cshtml" />
     <Content Include="Views\Angular\Step02.cshtml" />
     <Content Include="Views\Angular\_Layout.cshtml" />
-    <Content Include="Views\Jasmine\SpecRunner.cshtml" />
+    <Content Include="Views\Jasmine\Run.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -7,7 +7,7 @@ namespace BillManager.Web.Controllers
     {
         public ViewResult Run()
         {
-            return View("SpecRunner");
+            return View();
         }
     }
 }
