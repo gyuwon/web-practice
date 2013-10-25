@@ -165,6 +165,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AngularController.cs" />
+    <Compile Include="Controllers\AngularScenarioController.cs" />
     <Compile Include="Controllers\Api\ContactsController.cs" />
     <Compile Include="Controllers\ContactsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -269,6 +270,8 @@
     <Content Include="Scripts\angular.js" />
     <Content Include="Scripts\angular.min.js" />
     <Content Include="Scripts\Angular\Step02.js" />
+    <Content Include="Scripts\Angular\Step03.e2e.js" />
+    <Content Include="Scripts\Angular\Step03.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\errors.json" />
@@ -582,7 +585,9 @@
     <Content Include="Views\Angular\Step01.cshtml" />
     <Content Include="Views\Angular\Step02.cshtml" />
     <Content Include="Views\Angular\_Layout.cshtml" />
-    <Content Include="Views\Jasmine\Run.cshtml" />
+    <Content Include="Views\Jasmine\Index.cshtml" />
+    <Content Include="Views\Angular\Step03.cshtml" />
+    <Content Include="Views\AngularScenario\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

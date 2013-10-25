@@ -2,11 +2,11 @@ using System.Web.Mvc;
 
 namespace AspNetStack.Controllers
 {
-    public class JasmineController : Controller
+    public class AngularScenarioController : Controller
     {
-        public ViewResult Index()
+        public ActionResult Index()
         {
             return View();
         }
-    }
+	}
 }

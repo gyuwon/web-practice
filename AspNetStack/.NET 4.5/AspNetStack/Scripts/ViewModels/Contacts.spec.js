@@ -3,7 +3,7 @@
     var NewContactViewModel = Contacts.NewContactViewModel;
 
     describe('MainViewModel', function () {
-        it('test should call getContacts and update contacts', function () {
+        it('should call getContacts and update contacts', function () {
             // Setup
             var ironman = {}, hulk = {};
             var service = { getContacts: function () { } };
@@ -24,7 +24,7 @@
     });
 
     describe('NewContactViewModel', function () {
-        it('test should call addContact', function () {
+        it('should call addContact', function () {
             // Setup
             var service = { addContact: function () { } };
             var mock = sinon.mock(service);
@@ -42,7 +42,7 @@
             mock.verify();
         });
 
-        it('test should clear properties', function () {
+        it('should clear properties', function () {
             // Setup
             var service = { addContact: function () { } };
 
@@ -59,7 +59,7 @@
             expect(viewModel.email()).toBeFalsy();
         });
 
-        it('test should call MainViewModel.updateContacts', function () {
+        it('should call MainViewModel.updateContacts', function () {
             // Setup
             var service = { addContact: function (firstName, lastName, email, callback) { callback(); } };
             var mainViewModel = { updateContacts: function () { } };

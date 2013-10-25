@@ -3,3 +3,4 @@
 /// <reference path="jquery-1.8.2.js" />
 /// <reference path="bootstrap.js" />
 /// <reference path="angular.js" />
+/// <reference path="jasmine/jasmine.js" />

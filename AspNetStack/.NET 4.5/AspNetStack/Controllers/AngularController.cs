@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
@@ -46,6 +45,11 @@ namespace AspNetStack.Controllers
         }
 
         public ActionResult Step02()
+        {
+            return View();
+        }
+
+        public ActionResult Step03()
         {
             return View();
         }
