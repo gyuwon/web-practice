@@ -151,3 +151,5 @@ $RECYCLE.BIN/
 .DS_Store
 /AspNetStack/.NET 4.5/AspNetStack/App_Data
 /AspNetStack/.NET 4.5/packages
+/AspNet/AspNetStack/App_Data
+/AspNet/packages
