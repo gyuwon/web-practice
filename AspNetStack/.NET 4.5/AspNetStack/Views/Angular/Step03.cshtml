@@ -1,9 +1,9 @@
 @{
-    ViewBag.Title = "Step03";
+    ViewBag.Title = "Google phone gallery";
     Layout = "~/Views/Angular/_Layout.cshtml";
 }
 
-<div ng-controller="PhoneListCtrl">
+<div>
     <div>
         <div>
             Search: <input ng-model="query" />
@@ -16,12 +16,14 @@
                 </li>
             </ul>
         </div>
+        <div id="status">Current filter: {{query}}</div>
     </div>
 </div>
 
 @section scripts {
     @Scripts.Render("~/Scripts/Angular/Step03.js")
     <script type="text/javascript">
-        $('html').attr('ng-app', 'phonecatApp');
+        $('title').attr('ng-bind-template', 'Google phone gallery: {{query}}');
+        $('html').attr('ng-app', 'phonecatApp').attr('ng-controller', 'PhoneListCtrl');
     </script>
 }
