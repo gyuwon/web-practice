@@ -1,8 +1,8 @@
-﻿describe('AngularJS Step 03', function () {
+﻿describe('AngularJS Step 04', function () {
     describe('PhoneCap App', function () {
         describe('Phone List View', function () {
             beforeEach(function () {
-                browser().navigateTo('../../Angular/Step03');
+                browser().navigateTo('../../Angular/Step04');
             });
             it('should filter the phone list as user types into the search box', function () {
                 expect(repeater('.phones li').count()).toBe(3);

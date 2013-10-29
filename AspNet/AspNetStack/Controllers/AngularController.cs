@@ -53,5 +53,10 @@ namespace AspNetStack.Controllers
         {
             return View();
         }
+
+        public ActionResult Step04()
+        {
+            return View();
+        }
     }
 }

@@ -269,6 +269,8 @@
     <Content Include="Scripts\angular-touch.min.js" />
     <Content Include="Scripts\angular.js" />
     <Content Include="Scripts\angular.min.js" />
+    <Content Include="Scripts\Angular\Step04.e2e.js" />
+    <Content Include="Scripts\Angular\Step04.js" />
     <Content Include="Scripts\Angular\Step02.js" />
     <Content Include="Scripts\Angular\Step03.e2e.js" />
     <Content Include="Scripts\Angular\Step03.js" />
@@ -590,6 +592,7 @@
     <Content Include="Views\Jasmine\Index.cshtml" />
     <Content Include="Views\Angular\Step03.cshtml" />
     <Content Include="Views\AngularScenario\Index.cshtml" />
+    <Content Include="Views\Angular\Step04.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

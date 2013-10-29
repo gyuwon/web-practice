@@ -1,0 +1,34 @@
+@{
+    ViewBag.Title = "Google phone gallery";
+    Layout = "~/Views/Angular/_Layout.cshtml";
+}
+
+<div ng-controller="PhoneListCtrl">
+    <div>
+        <div>
+            Search: <input ng-model="query" />
+            Sort by:
+            <select ng-model="orderProp">
+                <option value="name">Alphabetical</option>
+                <option value="age">Newest</option>
+            </select>
+        </div>
+        <div>
+            <ul class="phones">
+                <li ng-repeat="phone in phones | filter:query | orderBy:orderProp">
+                    {{phone.name}}
+                    <p>{{phone.snippet}}</p>
+                </li>
+            </ul>
+        </div>
+        <div id="status">Current filter: {{query}}</div>
+    </div>
+</div>
+
+@section scripts {
+    @Scripts.Render("~/Scripts/Angular/Step04.js")
+    <script type="text/javascript">
+        $('title').attr('ng-bind-template', 'Google phone gallery: {{query}}');
+        $('html').attr('ng-app', 'phonecatApp');
+    </script>
+}
