@@ -19,6 +19,18 @@
                 input('query').enter('nexus');
                 expect(element('#status').text()).toMatch(/Current filter: nexus\s*$/);
             });
+            it('should be possible to control phone order via the drop down select box', function () {
+                input('query').enter('tablet');
+                expect(repeater('.phones li').column('phone.name')).toEqual([
+                    'Motorola XOOM™ with Wi-Fi',
+                    'MOTOROLA XOOM™'
+                ]);
+                select('orderProp').option('Alphabetical');
+                expect(repeater('.phones li').column('phone.name')).toEqual([
+                    'MOTOROLA XOOM™',
+                    'Motorola XOOM™ with Wi-Fi'
+                ]);
+            });
         });
     });
 });

@@ -269,6 +269,7 @@
     <Content Include="Scripts\angular-touch.min.js" />
     <Content Include="Scripts\angular.js" />
     <Content Include="Scripts\angular.min.js" />
+    <Content Include="Scripts\Angular\Step04.spec.js" />
     <Content Include="Scripts\Angular\Step04.e2e.js" />
     <Content Include="Scripts\Angular\Step04.js" />
     <Content Include="Scripts\Angular\Step02.js" />
