@@ -166,6 +166,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AngularController.cs" />
     <Compile Include="Controllers\AngularScenarioController.cs" />
+    <Compile Include="Controllers\Api\PhonesController.cs" />
     <Compile Include="Controllers\Api\ContactsController.cs" />
     <Compile Include="Controllers\ContactsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -181,6 +182,7 @@
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Contact.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\Phone.cs" />
     <Compile Include="Models\WebStackDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -275,6 +277,7 @@
     <Content Include="Scripts\Angular\Step02.js" />
     <Content Include="Scripts\Angular\Step03.e2e.js" />
     <Content Include="Scripts\Angular\Step03.js" />
+    <Content Include="Scripts\Angular\Step05.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\e2e-test.bat" />
