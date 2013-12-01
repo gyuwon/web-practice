@@ -6,14 +6,14 @@ namespace AspNetStack.Migrations
     using System.Data.Entity.Migrations.Infrastructure;
     using System.Resources;
     
-    [GeneratedCode("EntityFramework.Migrations", "6.0.0-beta1-20501")]
-    public sealed partial class Initialize : IMigrationMetadata
+    [GeneratedCode("EntityFramework.Migrations", "6.0.1-21010")]
+    public sealed partial class Contacts : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(Initialize));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(Contacts));
         
         string IMigrationMetadata.Id
         {
-            get { return "201310180432245_Initialize"; }
+            get { return "201312011531237_Contacts"; }
         }
         
         string IMigrationMetadata.Source
